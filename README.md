@@ -61,10 +61,9 @@ Things you may want to cover:
 * ...
 
 ■解決したいこと
-deviceのビューファイルの追加が合っているのか
-ユーザー情報編集機能でsharedの部分の理解ができない
+dMigrations are pending. To resolve this issue, run: bin/rails db:migrate RAILS_ENV=developmentというエラーがでる
 ■自力で調べた内容
-入れ替えができているのか不明
-新しくデータを作成する
+rails db:migrateやってみる
+
 ■仮説と検証作業の結果
-できているのかわからない
+解決せず
