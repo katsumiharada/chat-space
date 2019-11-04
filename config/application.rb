@@ -12,7 +12,7 @@ module ChatSpace
     I18n.config.available_locales = :ja
     I18n.default_locale = :ja
 
-    
+
 
 
 
@@ -24,7 +24,7 @@ module ChatSpace
       g.javascripts false
       g.helper false
       g.test_framework false
-      config.i18n.default_locale = :ja
+      # config.i18n.default_locale = :ja
     end
   end
 end
