@@ -61,9 +61,9 @@ Things you may want to cover:
 * ...
 
 ■解決したいこと
-
-
+dMigrations are pending. To resolve this issue, run: bin/rails db:migrate RAILS_ENV=developmentというエラーがでる
 ■自力で調べた内容
-
+rails db:migrateやってみる
 
 ■仮説と検証作業の結果
+解決せず
