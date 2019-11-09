@@ -61,9 +61,10 @@ Things you may want to cover:
 * ...
 
 ■解決したいこと
-dMigrations are pending. To resolve this issue, run: bin/rails db:migrate RAILS_ENV=developmentというエラーがでる
+scssの文字色だけうまく当たらない部分がある
+
 ■自力で調べた内容
-rails db:migrateやってみる
+colorで個別に当てる
 
 ■仮説と検証作業の結果
-解決せず
+部分的には変わった
