@@ -28,6 +28,10 @@ div {box-sizing: border-box;}
     margin-left: 0.3rem;
   }
 
+  .side-header__box__menu a {
+    color: white
+  }
+
   .fa.fa-edit {
     color: white;
   }
@@ -47,12 +51,17 @@ div {box-sizing: border-box;}
     margin-bottom: 40px;
   }
 
+  .group a {
+    color: white;
+    text-decoration: none;
+  }
+
   .group__group-name {
     font-size: 15px;
     margin-bottom: 5px;
   }
 
-  .group__latest-message {
+  .group__message {
     font-size: 11px;
   }
 }
