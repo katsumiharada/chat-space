@@ -11,15 +11,15 @@
       %ul.side-header__box__menu
         %li.side-header__box__menu__new-group
           = link_to new_group_path do
-            = fa_icon 'pencil-square-o', class: 'icon'
+            = icon('fas', 'pencil-square-o', class: 'icon')
         %li.list
           = link_to edit_user_path(current_user) do
-            = fa_icon 'cog', class: 'icon'
+            = icon('fas', 'cog', class: 'icon')
 
   .groups
     - current_user.groups.each do |group|
       .group
-        = link_to groups_path(group) do
+        = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
@@ -33,8 +33,8 @@
       %li.main-header__left-box__member-list
         Member : sample
       %li.main-header__left-box__member-list__member sample
-    %a{:href => "/groups/edit"}
-      .main-header__edit-btn Edit
+    = link_to edit_group_path(@group) do
+      .main-header__edit-btn Edits
 
   .messages
     .message
@@ -44,10 +44,10 @@
       %p.message__text chat-space
 
   .form
-      = form_for [@group, @message] do |f|
-        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-        .input-box
-          = f.label :image, class: 'form__mask__image' do
-            = icon('fas', 'image', class: 'icon')
-            = f.file_field :image, class: 'hidden'
-        = f.submit 'Send', class: 'form__submit'
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .input-box
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
