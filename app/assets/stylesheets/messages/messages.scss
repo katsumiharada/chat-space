@@ -1,0 +1,208 @@
+div {box-sizing: border-box;}
+
+// .chat-side {
+//   width: 300px;
+//   color: white;
+//   float: left;
+
+//   .side-header {
+//     background-color: #253141;
+//     height: 100px;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 20px;
+//   }
+
+//   .side-header__box {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//     font-weight: bold;
+//   }
+
+//   .side-header__box__menu {
+//     display: flex;
+//   }
+
+//   .side-header__box__menu li {
+//     margin-left: 0.3rem;
+//   }
+
+//   .side-header__box__menu a {
+//     color: white
+//   }
+
+//   .fa.fa-edit {
+//     color: white;
+//   }
+
+//   .fa.fa-cog {
+//     color: white;
+//   }
+
+//   .groups {
+//     height: calc(100vh - 100px);
+//     background-color: #2f3e51;
+//     padding: 20px 20px 0;
+//     overflow: scrolle;
+//   }
+
+//   .group {
+//     margin-bottom: 40px;
+//   }
+
+//   .group a {
+//     color: white;
+//     text-decoration: none;
+//   }
+
+//   .group__group-name {
+//     font-size: 15px;
+//     margin-bottom: 5px;
+//   }
+
+//   .group__message {
+//     font-size: 11px;
+//   }
+// }
+
+// .chat-main {
+//   height: 100vh;
+//   width: calc(100vw - 300px);
+//   float: left;
+
+//   .main-header {
+//     height: 100px;
+//     padding: 0 40px;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: solid 1px #eeeeee;
+//     overflow: scroll;
+//       overflow-x: scroll;
+//       overflow-y: scroll;
+//   }
+
+//   .main-header__left-box {
+//     margin-top: 35px;
+//   }
+
+//   .main-header__left-box__current-group {
+//     font-size: 20px;
+//     color: #333;
+//     margin-bottom: 15px;
+//   }
+
+//   .main-header__left-box__member-list {
+//     display: flex;
+//     font-size: 12px;
+//     color: #999999;
+//   }
+
+//   .main-header__edit-btn {
+//     height: 40px;
+//     line-height: 40px;
+//     padding: 0 20px;
+//     margin-top: 28px;
+//     border: solid 1px #38aef0;
+//     color: #38aef0; 
+//     position: absolute;
+//     right: 40px;
+//   }
+
+//   .messages {
+//     height: calc(100vh - 190px);
+//     padding: 46px 40px;
+//     background-color: #fafafa;
+//     overflow: scroll;
+//   }
+
+//   .message {
+//     padding-bottom: 40px;
+//   }
+
+//   .message__upper-info {
+//     display: flex;
+//     margin-bottom: 10px;
+//   }
+
+//   .message__upper-info__talker {
+//     color: #434a54;
+//     font-size: 16px;
+//     font-weight: bold;
+//   }
+
+//   .message__text {
+//     color: #434a54;
+//     font-size: 14px;
+//     margin-bottom: 10px;
+//   } 
+
+//   .messages {
+//     height: calc(100vh - 190px);
+//     padding: 46px 40px;
+//     background-color: #fafafa;
+//     overflow: scroll;
+//       overflow-x: scroll;
+//       overflow-y: scroll;
+//   }
+
+//   .message__upper-info__date {
+//     color: #999999;
+//     font-size: 12px;
+//     margin-left: 10px;
+//   }
+
+//   .form {
+//     height: 90px;
+//     padding: 20px 40px;
+//     background-color: #ddd;
+//   }
+
+//   .form form {
+//     display: flex;
+//   }  
+
+//   .form form {
+//     position: relative;
+//     width: 100%;
+//   }
+
+//   .form .form__message {
+//     height: 50px;
+//     width: 95%;
+//     padding: 0 40px 0 10px;
+//     color: #434a54;
+//     border-style: none;
+//   }
+
+//   .form .form__mask__image {
+//     font-size: 1.3rem;
+//     position: absolute;
+//     top: 10px;
+//     right: 130px;
+//     cursor: pointer;
+//   }
+
+//   .fa {
+//     display: inline-block;
+//     font: normal normal normal 14px/1 FontAwesome;
+//     font-size: inherit;
+//     text-rendering: auto;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//   }
+  
+//   .form form .hidden {
+//     display: none;
+//   }
+
+//   .form .form__submit {
+//     width: 100px;
+//     height: 50px;
+//     padding: 0 30px;
+//     margin-left: 15px;
+//     background-color: #38aef0;
+//     color: white;
+//     cursor: pointer;
+//   }
+// }
