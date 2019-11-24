@@ -1,2 +1,28 @@
-.messages
-  = render @messages
+-# .messages
+-#   = render @messages
+
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group
+        = @group.name        
+      %li.main-header__left-box__member-list
+        Member : 
+        - @group.users.each do |user|
+          = user.name
+      %li.main-header__left-box__member-list__member 
+    = link_to edit_group_path(@group) do
+      .main-header__edit-btn Edit
+
+  .messages
+    = render @messages
+
+
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .input-box
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
