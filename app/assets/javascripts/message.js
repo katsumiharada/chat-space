@@ -1,6 +1,11 @@
 $(function(){
   function buildHTML(message){
-    if (message.image) {
+    // message.image ==  ? "var image =`<img class="lower-message__image" src="${message.image}">`" : "var image =``"
+    if (message.image){
+      var image = `<img class="lower-message__image" src="${message.image}">`
+    }else{ 
+      var image = ``
+    }
     var html = `<div class="message">
                   <div class="upper-message">
                     <div class="upper-message__user-name">
@@ -15,27 +20,10 @@ $(function(){
                       ${message.content}
                     </p>
                     <div class="lower-message__image">
-                    <img class="lower-message__image" src="${message.image}">
+                      ${image}
                     </div>
                   </div>
                 </div>`
-    } else {
-    var html = `<div class="message">
-                  <div class="upper-message">
-                    <div class="upper-message__user-name">
-                      ${message.user_name}
-                    </div>
-                    <div class="upper-message__date">
-                      ${message.date}
-                    </div>
-                  </div>
-                  <div class="lower-message">
-                    <p class="lower-message__content">
-                      ${message.content}
-                    </p>
-                  </div>
-                </div>`
-    }
     return html;
   }
 
@@ -54,15 +42,6 @@ $(function(){
     })
     .done(function(message){
       console.log(message)
-      // function buildHTML(message){
-      //   // 「もしメッセージに画像が含まれていたら」という条件式
-      //   if message.image {
-      //     var html = //メッセージに画像が含まれる場合のHTMLを作る
-      //   } else {
-      //     var html = //メッセージに画像が含まれない場合のHTMLを作る
-      //   }
-      //   return html
-      // }
       var html = buildHTML(message);
       $('.messages').append(html);
       $(".form__submit").prop('disabled', false);
