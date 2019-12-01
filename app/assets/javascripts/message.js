@@ -1,11 +1,6 @@
 $(function(){
   function buildHTML(message){
-    // message.image ==  ? "var image =`<img class="lower-message__image" src="${message.image}">`" : "var image =``"
-    if (message.image){
-      var image = `<img class="lower-message__image" src="${message.image}">`
-    }else{ 
-      var image = ``
-    }
+    var image = message.image ? `<img class="lower-message__image" src="${message.image}">`: ``;
     var html = `<div class="message">
                   <div class="upper-message">
                     <div class="upper-message__user-name">
