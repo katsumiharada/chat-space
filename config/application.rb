@@ -15,11 +15,7 @@ module ChatSpace
     #Faker::Config.locale = :en
     #Faker::Internet.email
 
-
-
-
-
-
+    config.time_zone = 'Tokyo'
 
     config.generators do |g|
       g.stylesheets false
